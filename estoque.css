@@ -59,14 +59,9 @@ header img {
 .carros{
     padding: 20px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-
-.imagem-destaque{
-    max-width:350px ;
-    border-top-left-radius: 2%;
-    border-top-right-radius: 2%;
 }
 
 .imagem{
@@ -75,6 +70,12 @@ header img {
     margin-left: 15px;
     margin-right: 15px;
     border-radius: 2%;
+}
+
+.imagem-destaque{
+    width:350px ;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
 }
 
 .nome-carro{
@@ -94,6 +95,161 @@ header img {
     text-indent: 10px;
     list-style: none;
 }
+@media(max-width:1535px){
+    .carros{
+        padding: 10px;
+    }
+    .imagem-destaque{
+        width: 300px;
+    }
+    .detalhes-carro{
+        width: 300px;
+    }
+    .nome-carro{
+        width: 300px;
+    }
+}
+@media (max-width:1320px){
+    .imagem{
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+    .carros {
+        display:inline-block;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+    .imagem-destaque{
+        width: 350px;
+    }
+
+}
+@media (max-width:1270px){
+    .imagem{
+        margin-top: 40px;
+        margin-left: 60px;
+    }
+    .carros {
+    padding: none;
+    }
+    .imagem-destaque{
+        width: 300px;
+    }
+}
+@media (max-width:1170px){
+    .imagem{
+        margin-top: 30px;
+        
+    }
+    .imagem-destaque{
+        width: 450px;
+    }
+    .nome-carro{
+        width: 450px;
+    }
+    .detalhes-carro{
+        width: 450px;
+    }
+}
+@media (max-width:1070px){
+    .imagem-destaque{
+        width: 400px;
+    }
+    .nome-carro{
+        width: 400px;
+    }
+    .detalhes-carro{
+        width: 400px;
+    }
+}
+@media (max-width:975px){
+    .imagem-destaque{
+        width: 350px;
+    }
+    .nome-carro{
+        width: 350px;
+    }
+    .detalhes-carro{
+        width: 350px;
+    }
+}
+@media (max-width:875px){
+    .imagem{
+        margin-top: 20px;
+    }
+    .imagem-destaque{
+        width: 300px;
+    }
+    .nome-carro{
+        width: 300px;
+    }
+    .detalhes-carro{
+        width: 300px;
+    }
+}
+@media (max-width:775px){
+    .imagem-destaque{
+        width: 250px;
+    }
+    .nome-carro{
+        font-size: 18px;
+        width: 250px;
+    }
+    .detalhes-carro{
+        font-size: 14px;
+        width: 250px;
+    }
+}
+@media (max-width:675px){
+    .imagem{
+        margin-left: 80px;
+    }
+    .imagem-destaque{
+        width: 450px;
+    }
+    .nome-carro{
+        font-size: 25px;
+        width: 400px;
+    }
+    .detalhes-carro{
+        font-size: 16px;
+        width: 400px;
+    }
+}
+@media (max-width:570px){
+    .imagem{
+        margin-left: 60px;
+    }
+    .imagem-destaque{
+        width: 400px;
+    }
+    .nome-carro{
+        font-size: 25px;
+        width: 400px;
+    }
+    .detalhes-carro{
+        font-size: 16px;
+        width: 400px;
+    }
+}
+@media (max-width:470px){
+    .imagem{
+        margin-left: 20px;
+    }
+    .imagem-destaque{
+        width: 350px;
+    }
+    .nome-carro{
+        font-size: 20px;
+        width: 350px;
+    }
+    .detalhes-carro{
+        font-size: 14px;
+        width: 350px;
+    }
+}
 /*--Parte de baixo--*/
 .apoio{
     font-family: 'Source Sans Pro', sans-serif;
@@ -112,7 +268,25 @@ h3 {
     font-size: 20px;
     border-bottom: 2px solid gray;
 }
-
+@media (max-width:680px){
+    .lista-apoio{
+        font-size: 14px;
+    }
+}
+@media (max-width:530px){
+    .apoio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap:50px;
+    }
+    .lista-apoio{
+        font-size: 16px;
+    }
+}
+/*-- Parte do Footer --*/
 footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 60px;
@@ -130,4 +304,29 @@ footer > ul{
 }
 .social-midia {
     height: 40px;
+}
+@media (max-width:860px){
+    footer {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-midia {
+        height: 30px;
+    }
+}
+@media (max-width:540px){
+    footer > p{
+        font-size: 12px;
+    }
+    .social-midia{
+        height: 25px;
+    }
+}
+@media (max-width:450px){
+    footer > p{
+        font-size: 10px;
+    }
 }
