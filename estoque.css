@@ -236,7 +236,7 @@ header img {
 }
 @media (max-width:470px){
     .imagem{
-        margin-left: 5px;
+        margin-left: 40px;
     }
     .imagem-destaque{
         width: 300px;
