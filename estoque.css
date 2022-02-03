@@ -239,15 +239,15 @@ header img {
         margin-left: 20px;
     }
     .imagem-destaque{
-        width: 350px;
+        width: 300px;
     }
     .nome-carro{
         font-size: 20px;
-        width: 350px;
+        width: 300px;
     }
     .detalhes-carro{
         font-size: 14px;
-        width: 350px;
+        width: 300px;
     }
 }
 /*--Parte de baixo--*/
