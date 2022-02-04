@@ -48,12 +48,15 @@ header img {
     transition: 0.6s;
     font-size: 25px;
 }
+/*-- Conteudo Principal --*/
 .titulo-principal{
     background-image: url(imagens/cars/loja2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 150px;
+    display: flex;
+    flex-direction: column;
 }
 .titulo-principal > h1{
     font-family: 'Belleza', sans-serif;
@@ -67,6 +70,37 @@ header img {
     color: white;
     width: 800px;
 }
+
+@media (max-width:1080px){
+    .titulo-principal{
+        padding: 100px;
+    }
+    .titulo-principal h1{
+        font-size: 40px;
+    }
+    .titulo-principal p {
+        width: auto;
+    }
+}
+
+@media (max-width:750px){
+    .titulo-principal{
+        padding: 50px;
+    }
+    .titulo-principal h1{
+        font-size: 25px;
+        width: auto;
+        background-color: rgba(0, 0, 0, 0.637);
+        border-radius: 5%;
+    }
+    .titulo-principal p {
+        width: auto;
+        background-color: rgba(0, 0, 0, 0.637);
+        border-radius: 5%;
+        font-size: 14px;
+    }
+}
+/*-- Descrição do dono --*/
 .criador {
     display: flex;
     width: 100%;
@@ -87,11 +121,90 @@ header img {
 
 .foto-minha {
     margin: 50px 50px 50px 150px;
-    max-width: 400px;
-    max-height: 600px;
+    width: 400px;
+    height: 500px;
     border-radius: 5%;
 }
-
+@media(max-width:1380px){
+    .criador > div {
+        width: 500px;
+    }
+    .criador-nome{
+        font-size: 40px;
+    }
+    .text.lucas{
+        width: auto;
+    }
+    .foto-minha{
+        width:350px;
+        height: 450px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+@media(max-width:1240px){
+    .criador > div {
+        width: 450px;
+    }
+    .criador-nome{
+        font-size: 35px;
+    }
+    .text.lucas{
+        width: auto;
+    }
+    .foto-minha{
+        width:250px;
+        height: 350px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+@media(max-width:1080px){
+    .criador{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .criador > div {
+        width: auto;
+        margin: auto;
+    }
+    .criador-nome{
+        font-size: 40px;
+        width: auto;
+    }
+    .text.lucas{
+        width: auto;
+    }
+    .foto-minha{
+        width:400px;
+        height: 500px;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+}
+@media(max-width:980px){
+    .criador-nome{
+        font-size: 30px;
+    }
+}
+@media(max-width:580px){
+    .foto-minha{
+        width: 350px;
+        height: 450px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:480px){
+    .foto-minha{
+        width: 300px;
+        height: 400px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
 
 /*--Parte de baixo--*/
 .apoio{
@@ -111,6 +224,25 @@ h3 {
     font-size: 20px;
     border-bottom: 2px solid gray;
 }
+@media (max-width:680px){
+    .lista-apoio{
+        font-size: 14px;
+    }
+}
+@media (max-width:530px){
+    .apoio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap:50px;
+    }
+    .lista-apoio{
+        font-size: 16px;
+    }
+}
+/*-- Parte do Footer --*/
 
 footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -129,4 +261,29 @@ footer > ul{
 }
 .social-midia {
     height: 40px;
+}
+@media (max-width:860px){
+    footer {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-midia {
+        height: 30px;
+    }
+}
+@media (max-width:540px){
+    footer > p{
+        font-size: 12px;
+    }
+    .social-midia{
+        height: 25px;
+    }
+}
+@media (max-width:450px){
+    footer > p{
+        font-size: 10px;
+    }
 }
